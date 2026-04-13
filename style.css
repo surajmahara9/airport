@@ -583,6 +583,10 @@ section {
 .book-btn:hover {
   background: #0056b3;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
 /* TABLET */
 @media (max-width: 992px) {
@@ -596,7 +600,7 @@ section {
 }
 
 /* MOBILE */
-@media (max-width: 576px) {
+@media (max-width: 668px) {
   .plane-container {
     grid-template-columns: 1fr;
   }
