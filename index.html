@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siraha Airport</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div id="head">
+      <img src="Image/logo.png" class="logo">
+
+      <nav class="menu">
+        <i class="fa-solid fa-bars menu-toggle" onclick="openMenu()"></i>
+
+        <ul id="nav-menu">
+          <img src="Image/logo.png" class="menu-scl-img" />
+          <hr class="menu-line">
+          <div class="close-box">
+            <i class="fa-solid fa-x close" onclick="closeMenu()"></i>
+          </div>
+          <li class="list-item"><a href="#air-wel-name" class="list-link" onclick="closeMenu()">Home</a>
+          </li>
+          <li class="list-item"><a href="#name-flight" class="list-link" onclick="closeMenu()">Flights</a>
+          </li>
+          <li class="list-item"><a href="#name-ser" class="list-link" onclick="closeMenu()">Services</a>
+          <li class="list-item"><a href="#name-ser" class="list-link" onclick="closeMenu()">Aeroplanes</a>
+          </li>
+          <li class="list-item"><a href="#name-ter" class="list-link" onclick="closeMenu()">Terminals</a>
+          </li>
+          <li class="list-item"><a href="#contact" class="list-link" onclick="closeMenu()">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Hero -->
+    <section id="air-img">
+      <h1 id="air-wel-name">Welcome to</h1>
+      <h1 id="air-sir-name">Siraha Airport</h1>
+      <p id="air-text">Your gateway to seamless travel and world-class airport services.</p>
+      <a href="#name-flight" id="check-btn">Check Flight</a>
+      <a href="#name-book" id="book-btn">Book Flight</a>
+    </section>
+
+    <!-- Flight Info -->
+    <section id="flight-info-box">
+      <h1 id="name-flight">Flight Information</h1>
+
+      <table id="table-info">
+        <thead>
+          <tr>
+            <th>Flight</th>
+            <th>Airline</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+            <th>Status</th>
+            <th>Gate</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>AA101</td>
+            <td>Siraha Airlines</td>
+            <td>Kathmandu (KTM)</td>
+            <td>8:15 AM</td>
+            <td>On Time</td>
+            <td>A12</td>
+          </tr>
+
+          <tr>
+            <td>DL220</td>
+            <td>Madar Airlines</td>
+            <td>Biratnagar (BIR)</td>
+            <td>9:30 AM</td>
+            <td>Delayed</td>
+            <td>D4</td>
+          </tr>
+
+          <tr>
+            <td>UA304</td>
+            <td>Lahan Airlines</td>
+            <td>Nepalgunj (KEP)</td>
+            <td>10:00 AM</td>
+            <td>On Time</td>
+            <td>K6</td>
+          </tr>
+
+
+          <tr>
+            <td>SA3074</td>
+            <td>Golbazar Airlines</td>
+            <td>Bhairahawa (BWA)</td>
+            <td>10:45 AM</td>
+            <td>On Time</td>
+            <td>E1</td>
+          </tr>
+
+          <tr>
+            <td>FE024</td>
+            <td>Sarswar Airlines</td>
+            <td>Janakpur (JKR)</td>
+            <td>12:00 PM</td>
+            <td>Departed</td>
+            <td>R7</td>
+          </tr>
+          <tr>
+            <td>KR0247</td>
+            <td>Laxmipur Airlines</td>
+            <td>Biratnagar (BRT)</td>
+            <td>12:15 PM</td>
+            <td>On Time</td>
+            <td>H3</td>
+          </tr>
+          <tr>
+            <td>GE1032</td>
+            <td> Aurahi Airlines</td>
+            <td>Chitwan (CWN)</td>
+            <td>2:15 PM</td>
+            <td>Boarding</td>
+            <td>U2</td>
+          </tr>
+          <tr>
+            <td>UA304</td>
+            <td>Navrajpur Airlines</td>
+            <td>Ilam (ILM)</td>
+            <td>3:00 PM</td>
+            <td>On Time</td>
+            <td>Z1</td>
+          </tr>
+          <tr>
+            <td>MD0401</td>
+            <td>Bhagwanpur Airlines</td>
+            <td>Gorkha (GKA)</td>
+            <td>4:30 PM</td>
+            <td>Cancelled</td>
+            <td>S5</td>
+          </tr>
+          </tr>
+
+          <tr>
+            <td>BR5701</td>
+            <td>Bariyarpatti Airlines</td>
+            <td>Koshi (KSI)</td>
+            <td>5:15 PM</td>
+            <td>Arrived</td>
+            <td>A4</td>
+          </tr>
+
+          <tr>
+            <td>MN3012</td>
+            <td>Arnama Airlines</td>
+            <td>Bardiya (BDA)</td>
+            <td>8:45 PM</td>
+            <td>On Time</td>
+            <td>X2</td>
+          </tr>
+      </table>
+    </section>
+
+    <!-- Services -->
+    <section id="service-box">
+      <h1 id="name-ser">Our Services</h1>
+
+      <div class="services"> <!-- 🔥 FIX -->
+
+        <div class="service">
+          <i class="fa-solid fa-plane icon"></i>
+          <h3>Flight Booking</h3>
+          <p>Book your flights easily with our integrated booking system.</p>
+        </div>
+
+        <div class="service">
+          <i class="fa-solid fa-suitcase-rolling icon"></i>
+          <h3>Baggage Handling</h3>
+          <p>Efficient baggage services ensuring your luggage is safe and on time.</p>
+        </div>
+
+        <div class="service">
+          <i class="fa-solid fa-utensils icon"></i>
+          <h3>Dining & Shops</h3>
+          <p>Enjoy a variety of restaurants & shops within the terminals.</p>
+        </div>
+
+        <div class="service">
+          <i class="fa-solid fa-taxi icon"></i>
+          <h3>Ground Transport</h3>
+          <p>Convenient shuttle & taxi services.</p>
+        </div>
+
+      </div>
+    </section><section id="airplanes">
+
+  <h1 class="section-title">Popular Aeroplanes</h1>
+
+  <div class="plane-container">
+
+    <div class="plane-card">
+      <img src="Image/air-1.jpeg">
+      <div class="plane-info">
+        <h3>Boeing 737</h3>
+        <p>Reliable short-haul aircraft known for efficiency and performance.</p>
+        <button class="book-btn"><a href="#name-book">Book Now</a></button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-2.webp">
+      <div class="plane-info">
+        <h3>Airbus A320</h3>
+        <p>Advanced jet offering smooth, safe, and comfortable travel.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-3.jpg">
+      <div class="plane-info">
+        <h3>Boeing 777</h3>
+        <p>Long-haul aircraft designed for luxury and extended journeys.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-4.jpg">
+      <div class="plane-info">
+        <h3>Airbus A350</h3>
+        <p>Next-generation aircraft with superior fuel efficiency.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-5.webp">
+      <div class="plane-info">
+        <h3>Boeing 787</h3>
+        <p>Innovative Dreamliner delivering exceptional comfort.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-6.webp">
+      <div class="plane-info">
+        <h3>Embraer E190</h3>
+        <p>Compact regional jet ideal for short-distance travel.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-7.jpg">
+      <div class="plane-info">
+        <h3>ATR 72</h3>
+        <p>Dependable turboprop for regional connections.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-8.jpg">
+      <div class="plane-info">
+        <h3>Airbus A380</h3>
+        <p>World’s largest aircraft offering unmatched luxury.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="plane-card">
+      <img src="Image/air-9.jpg">
+      <div class="plane-info">
+        <h3>Bombardier CRJ</h3>
+        <p>High-speed regional jet ensuring reliable service.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+    <section id="booking">
+
+      <h1 id="name-book">Online Book Flight</h1>
+      
+      <p class="booking-text">
+        Book your flight with ease and comfort.<br>
+        Choose the best option for your journey today.
+      </p>
+      
+      <form onsubmit="checkForm(event)">
+
+        <div class="form-group">
+          <label>Passanger Name</label>
+          <input type="text" id="name" placeholder="Full Name">
+        </div>
+
+        <div class="form-group">
+          <label>From</label>
+          <input type="text" id="from" placeholder="Departure City">
+        </div>
+
+        <div class="form-group">
+          <label>To</label>
+          <input type="text" id="to" placeholder="Destination City">
+        </div>
+
+        <div class="form-group">
+          <label>Flight Date</label>
+          <input type="date" id="date">
+        </div>
+
+        <div class="form-group">
+          <label>Passanger</label>
+          <select id="passengers">
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Class</label>
+          <select id="class">
+            <option value="">Select</option>
+            <option value="Economy">Economy</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+
+        <p id="alert"></p>
+
+        <button type="submit">Next</button>
+
+      </form>
+
+    </section>
+
+
+    <!-- STEP 3: TICKET PREVIEW -->
+    <section class="ticket" id="ticketCard">
+
+      <h1>Siraha Airport Ticket</h1>
+
+      <h2 id="pass-name"></h2>
+
+      <p>From: <span id="from-data"></span></p>
+      <p>To: <span id="to-data"></span></p>
+      <p>Date: <span id="date-data"></span></p>
+      <p>Passengers: <span id="passenger-data"></span></p>
+      <p>Class: <span id="class-data"></span></p>
+      <h1 id="tick-down-msg"></h1>
+      <button id="ok" onclick="ok()">OK</button>
+      <button type="button" id="dwn" onclick="downloadTicket()">Download Ticket</button>
+    </section>
+    <!-- Terminal -->
+    <section id="terminal-box">
+      <h1 id="name-ter">Terminal</h1>
+
+      <div class="terminals">
+
+        <div class="terminal">
+          <img src="Image/Ter-1.jpg" alt="">
+          <h4>Terminal 1</h4>
+          <p>Main domestic terminal for regional flights.</p>
+        </div>
+
+        <div class="terminal">
+          <img src="Image/Ter-2.jpeg" alt="">
+          <h4>Terminal 2</h4>
+          <p>International terminal for global destinations.</p>
+        </div>
+
+        <div class="terminal">
+          <img src="Image/Ter-3.jpg" alt="">
+          <h4>Terminal 3</h4>
+          <p>VIP & premium services terminal.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <section id="contact">
+
+      <h1>Contact Us</h1>
+
+      <div class="contact-container">
+
+        <!-- Left: Info -->
+        <div class="contact-box">
+          <div class="contact-info">
+            <h4><i class="fa-solid fa-plane"></i> Siraha Airport Headquarter</h4>
+
+            <p><i class="fa-solid fa-location-dot"></i> Siraha123 Way</p>
+            <p><i class="fa-solid fa-city"></i> Siraha City</p>
+            <p><i class="fa-solid fa-flag"></i> Nepal</p>
+            <p><i class="fa-solid fa-phone"></i> 033-123</p>
+            <p><i class="fa-solid fa-envelope"></i> info@sirahaairport.com</p>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form">
+          <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your full name">
+
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com">
+
+            <label>Message</label>
+            <textarea placeholder="Write your message..."></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div id="foot">
+        <p>© 2026 Siraha Airport.All rights resevered. <br>
+          Developed by Suraj Mahara.</p>
+      </div>
+
+    </section>
+  </footer>
+</body>
+
+</html>
