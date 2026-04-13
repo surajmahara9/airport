@@ -514,10 +514,13 @@ section {
 }
 
 /* TITLE */
-.section-title {
+#section-title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+    margin-top: -210px;
+  margin-bottom: 70px;
+  font-size: 2.2rem;
+  padding-top: 90px;
+
 }
 
 /* GRID */
